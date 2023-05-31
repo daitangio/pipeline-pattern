@@ -2,11 +2,13 @@ package com.gioorgi.pattern.pipeline.entity;
 
 import javax.persistence.*;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
 @Table(name="t_surf")
 @Data
+@Builder
 public class SurfTable {
 
     @Id

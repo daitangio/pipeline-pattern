@@ -4,10 +4,12 @@ import java.util.*;
 
 import javax.persistence.*;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
 @Data
+@Builder /* Builder make a flow-like constructor */
 public class SurfGuy {
     
     @Id
