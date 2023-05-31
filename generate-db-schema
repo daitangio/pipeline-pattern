@@ -1,0 +1,8 @@
+#!/bin/bash
+# Refer to https://vladmihalcea.com/hibernate-hbm2ddl-auto-schema/
+# export MAVEN_OPTS="-Xms512m -Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=100"
+./mvnw package
+rm db/schema.sql
+java  -Djavax.persistence.schema-generation.scripts.action=create \
+    -Djavax.persistence.schema-generation.scripts.create-target=./db/schema.sql  -jar target/pipeline-*.jar
+git diff db/schema.sql
