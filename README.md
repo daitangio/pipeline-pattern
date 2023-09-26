@@ -24,6 +24,10 @@ In this same repository
 
 Just provide a java JVM and a Linux/Windows environment: maven wraper (mvn) will do the rest
 
+# State machine example
+
+## Reference:
+https://docs.spring.io/spring-statemachine/docs/3.2.1/reference/#developing-your-first-spring-statemachine-application
 
 
 # References
